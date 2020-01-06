@@ -1,5 +1,136 @@
-<html>
-    <body>
-        My Info
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Tasneem Talawalla-Vora</title>
+</head>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" id="main-nav">
+                Tasneem Talawalla-Vora
+            </a>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="row">
+        <div class="col-md-3 bio">
+            <section>
+                <img src="assets/bio-img1.jpg" alt="Tasneem Talawalla-Vora" class="img-responsive bio-img">
+                <p class="centered" id="bio-p">
+                    Enthusiastic and focused Data Analyst, seeking to establish a career in analyzing and modelling
+                    data.
+                    Strong communicator, comfortable in learning new skills.
+                </p>
+
+            </section>
+        </div>
+        <section>
+            <div class="col-md-3">
+                <a href="https://tasvora.github.io/Web-Design-Dashboard/">
+                    <div class="thumbnail project" onmouseover="expand(this)" onmouseout="hide(this)">
+                        <img src="assets/weather_by_latitude.png" alt="Weather By Latitude">
+                        <div class="caption">
+                            <h3>Weather By Latitude</h3>
+                        </div>
+                        <div class="project-description">
+                            <hr>
+                            A study of weather patterns by latitude, utilizing API calls to OpenWeatherMap to gather
+                            data on a random assortment of locations
+                            around the globe. Patterns and visualizations are presented via a responsive webpage.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://github.com/tasvora/homework/tree/master/web-scraping-challenge">
+                    <div class="thumbnail project" onmouseover="expand(this)" onmouseout="hide(this)">
+                        <img src="assets/mars-data-scraping.png" alt="Mars Data Scraping">
+                        <div class="caption">
+                            <h3>Mar's Data Scraping</h3>
+                        </div>
+                        <div class="project-description">
+                            <hr>
+                            A webpage of images and information on Mars, delivered via datascraping of prominent
+                            Mars-specific and general
+                            space exploration related agencies and authorities.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://tasvora.github.io/UFO-Sightings/">
+                    <div class="thumbnail project" onmouseover="expand(this)" onmouseout="hide(this)">
+                        <img src="assets/Screenshot_UFO.png" alt="UFO Sightings">
+                        <div class="caption">
+                            <h3>Reported UFO Sightings</h3>
+                        </div>
+                        <div class="project-description">
+                            <hr>
+                            A sortable table and interactive visualization of self-reported UFO sightings to the
+                            National UFO Reporting center
+                            (NUFORC).
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+    </div>
+</body>
+
+<nav class="navbar navbar-default navbar-static-bottom footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="icon-links">
+                    <a href="https://github.com/tasvora">
+                        <img src="assets/github-icon.png" alt="GitHub" class="icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/tasneemd18/">
+                        <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
+                    </a>
+                    <a href="mailto:tasneemd18@gmail.com">
+                        <img src="assets/email-icon.png" alt="Email" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function expand(panel) {
+        var description = panel.getElementsByClassName("project-description")[0]
+        description.style.display = "block"
+    }
+    function hide(panel) {
+        var description = panel.getElementsByClassName("project-description")[0]
+        description.style.display = "none"
+    }
+
+</script>
+
 </html>
